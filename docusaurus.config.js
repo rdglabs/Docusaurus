@@ -57,8 +57,8 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -97,11 +97,11 @@ const config = {
             label: 'Guides',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/wonderingadmin/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/wonderingadmin/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
@@ -120,21 +120,18 @@ const config = {
               },
             ],
           },
-          {
-            //Space in the footer
-          },
-          {
-            //Space in the footer
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Github',
-                href: 'https://github.com/wonderingadmin',
-              },
-            ],
-          },
+          // {
+          //   //Space in the footer
+          // },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Github',
+          //       href: 'https://github.com/wonderingadmin',
+          //     },
+          //   ],
+          // },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Wondering Admin Built with Docusaurus.`,
       },
