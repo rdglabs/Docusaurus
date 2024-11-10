@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'RDGLabs',
-  tagline: 'Dinosaurs are cool',
+  title: 'Wondering Admins',
+  tagline: "A System Admin's Journey and Spaghetti Documentation",
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -22,8 +22,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'RDGLabs', // Usually your GitHub org/user name.
-  projectName: 'rdglabs.github.io', // Usually your repo name.
+  organizationName: 'WonderingAdmin', // Usually your GitHub org/user name.
+  projectName: 'WonderingAdmin.github.io', // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -84,9 +84,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'RDGLabs',
+        title: 'WonderingAdmin',
         logo: {
-          alt: 'RDGLabs Logo',
+          alt: 'Wondering Logo',
           src: 'img/serverStack.svg',
         },
         items: [
@@ -98,7 +98,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/rdglabs/my_docusaurus',
+            href: 'https://github.com/wonderingadmin/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
@@ -131,12 +131,12 @@ const config = {
             items: [
               {
                 label: 'Github',
-                href: 'https://github.com/rdglabs',
+                href: 'https://github.com/wonderingadmin',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} RDGLabs Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Wondering Admin Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.dracula,
