@@ -20,4 +20,4 @@ I have used other documentation methods, simple text docs, onenote, [bookstack](
 ## Hosting
 I actually come across github pages before finding docusaurus. I was going though [Github pages class](https://github.com/skills/github-pages) messing around with the set up they have by default, using [jekyll](https://jekyllrb.com/). After going though that class I was tested it out and trying to figure out how to apply a theme. During this time I found a reddit post talking about Docusaurus and comparing it to Jekyll. After some quick researching into it decided to use it 
 
-Now off to figuring out how to host the docusaurus site with ideally no cost, like github pages. At first I didn't think it was possible but later did figure out 
+Now off to figuring out how to host the docusaurus site with ideally no cost, like github pages. At first I didn't think it was possible since I figured github would lock it to using justs their platform but after a single google search found it the docusaurus docutation showing how to set it up. 
