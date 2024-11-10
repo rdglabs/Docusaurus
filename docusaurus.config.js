@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Wondering Admins',
   tagline: "A System Admin's Journey and Spaghetti Documentation",
-  favicon: 'img/small.ico',
+  favicon: 'img/test.ico',
 
   // Set the production url of your site here
   url: 'https://rdglabs.github.io',

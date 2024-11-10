@@ -9,7 +9,7 @@ tags: [Hello, docusaurus]
 You found my random blog/documentation site, **CONGRATES!!!**
 
 <!-- truncate -->
-Hello I am RDG. What are you going to get from this site, Well mainly random babbling from myself and documentation with typo's and grammar's mistakes everywhere!!!!~unless my wife catches it~
+Hello! I am RG. What are you going to get from this site, Well mainly random babbling from myself and documentation with typo's and grammar's mistakes everywhere!!!!~unless my wife catches it~
 
 Little background, I am currently the one and only NA Regional CoE infrastructure system administrator for a global manufacturing company in the US. I mainly focus on our Window Servers, Active Directory, M365, Entra, Azure, powershell, cybersecurity and assist with networking. Even with all those duties I still pick up random help desk() ticket on a daily bases. Our local help desk it only 2 people across 4 site in 2 states, excluding myself and regional IT Manager. The two things that caused me to look into creating this site was:
 
