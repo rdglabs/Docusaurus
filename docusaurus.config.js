@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Wondering Admins',
+  title: 'Wondering Admin',
   tagline: "A System Admin's Journey and Spaghetti Documentation",
   favicon: 'img/test.ico',
 
