@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Wondering Admins',
   tagline: "A System Admin's Journey and Spaghetti Documentation",
-  favicon: 'img/favicon.ico',
+  favicon: 'img/wadm.ico',
 
   // Set the production url of your site here
   url: 'https://rdglabs.github.io',
@@ -87,7 +87,7 @@ const config = {
         title: 'WonderingAdmin',
         logo: {
           alt: 'Wondering Logo',
-          src: 'img/serverStack.svg',
+          src: 'img/Logo.svg',
         },
         items: [
           {
