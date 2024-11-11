@@ -5,7 +5,7 @@ authors: [gillespr]
 tags: [github, docusaurus]
 ---
 
-# Docusaurus on Github Pages
+# Settling on Docusaurus
 
 What I wanted from this site and why did I select Docusaurus and Github Pages
 
