@@ -7,7 +7,7 @@ tags: [github, docusaurus]
 
 # Settling on Docusaurus
 
-What I wanted from this site and why did I select Docusaurus and Github Pages
+What I wanted from this site and why did I select Docusaurus and Github Pages maybe...
 
 <!-- truncate -->
 
