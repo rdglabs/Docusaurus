@@ -1,0 +1,26 @@
+name: docs
+on:
+  push:
+    branches: [ master ]
+    paths: 'myfolder/*/README.md'
+
+jobs:
+  docit:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: Copy the Readmes
+      run: |
+        find ./myfolder/ -type f -name "README.md" | while read fname; do
+          dirname=`dirname "$fname"`
+          foldername=`basename "$dirname"`
+          filename=`basename "$fname"`
+          newname=`echo "$dirname" | sed -e "s/ /_/g"`
+          cp "${dirname}/$filename" "./docs/_myfolder/${foldername}.md"
+        done
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Add changes" -a
