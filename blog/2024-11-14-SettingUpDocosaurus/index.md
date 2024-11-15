@@ -1,6 +1,6 @@
 ---
 slug: settingupdocusaurus
-title: Setting_up_Docusaurus
+title: Setting up Docusaurus
 authors: [gillespr]
 tags: [github, docusaurus]
 ---
