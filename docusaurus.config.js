@@ -72,7 +72,7 @@ const config = {
   ],
   plugins: [
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
+      require.resolve("@cmfcmf/docusaurus-search-local"),
       ({
         hashed: true,
       }),
