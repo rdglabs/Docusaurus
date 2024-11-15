@@ -5,10 +5,8 @@ authors: [gillespr]
 tags: [github, docusaurus]
 ---
 # Setting Up Docusaurus
-The process of learning Docusaurus and the base setup of Wondering Admin. 
-
-<!--intro-->
-
+The process of learning Docusaurus and the base setup of Wondering Admin. This will provide a simple startup on Github Pages.  
+<!-- truncate --> 
 The Docusaurus [getting status](https://docusaurus.io/docs/installation) documentation is a great tool to follow and use. To be able to run and test the site locally you need node.js V18+. To install node.js you can use the installer found at [node.js](https://nodejs.org/en/download/package-manager), I used [chocolatey](https://chocolatey.org/install) to install it. I would also recommend using [Visual Studio Code (vscode)](https://code.visualstudio.com/)
 
 ## Chocolatey & Node.js
