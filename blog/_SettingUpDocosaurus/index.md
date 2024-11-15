@@ -37,7 +37,7 @@ Now that Node.js is installed we can get Docusaurus installed and running locall
       TypeScript
   ```
  
-  I know a little JavaScript and even less with TypeScript, I selected JavaScript. It will take a minute or so and download the required files. 
+  I know a little of JavaScript and even less with TypeScript so I selected JavaScript. It will take a minute or so and download the required files. 
   ![Downloading files](./img/create-docusaurus-out1.png)
 
   All the basic files are now available inside the folder called `my-website` or whatever you named it. We can view the site now with all its defaults. To do this you will want to run the follow commands inside your site root folder:
@@ -58,7 +58,7 @@ Now that Node.js is installed we can get Docusaurus installed and running locall
 
 - ### Configuring Docusaurus
 
-  In `docusaurus.config.js` you will want to change some variables. You will want to fine??? this section to change the variables. The comments are helpful, the whole documentation is really good. This section is line 13-26 in `docusaurus.config.js`. 
+  In `docusaurus.config.js` you will want to change some variables. You will want to define this section to change the variables. The comments are helpful, the whole documentation is really good. This section is line 13-26 in `docusaurus.config.js`. 
   ```js
     title: 'My Site',
     tagline: 'Dinosaurs are cool',
@@ -125,10 +125,10 @@ Now that Node.js is installed we can get Docusaurus installed and running locall
       ),
     },
     ```
-    There is 3 block by default and they equally spaced, and centered on the page. Change the title, svg, and descriptions to change them. 
+    There are 3 blocks by default that are equally spaced and centered on the page. Change the title, svg, and descriptions to be what you would like them to say.
 
   - ### Color theme
-    The only thing left is changing the color scheme. This will affect the whole website color scheme. The file `/src/css/custom.css` holds all the color hex values for dark and light mode. Adjust them as you want. 
+    The only thing left is changing the color scheme. This will affect the whole websites color scheme. The file `/src/css/custom.css` holds all the color hex values for dark and light mode. Adjust them as you want. 
 
     By default it will select light mode for new user, personally the first thing I do it change everything to dark mode. Because of these I added this code to set the default theme to dark mode. 
     ```js
