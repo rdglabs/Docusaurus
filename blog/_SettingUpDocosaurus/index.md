@@ -3,7 +3,7 @@ The process of learning Docusaurus and the base setup of Wondering Admin.
 
 <!--intro-->
 
-The Docusaurus [getting status](https://docusaurus.io/docs/installation)documentation is a great tool to follow and use. To be able to run and test the site locally you need node.js V18+. To install node.js you can use the installer found at [node.js](https://nodejs.org/en/download/package-manager), I used [chocolatey](https://chocolatey.org/install) to install it. I would also recommend using [Visual Studio Code (vscode)](https://code.visualstudio.com/)
+The Docusaurus [getting status](https://docusaurus.io/docs/installation) documentation is a great tool to follow and use. To be able to run and test the site locally you need node.js V18+. To install node.js you can use the installer found at [node.js](https://nodejs.org/en/download/package-manager), I used [chocolatey](https://chocolatey.org/install) to install it. I would also recommend using [Visual Studio Code (vscode)](https://code.visualstudio.com/)
 
 ## Chocolatey & Node.js
 [Chocolatey](https://chocolatey.org/) is a great tool to install program via the command lind. Windows has created their own version of it, while its works pretty good and is great for some programs I have found Chocolatey works better for devlopment tools.
