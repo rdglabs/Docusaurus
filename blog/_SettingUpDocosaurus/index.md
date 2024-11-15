@@ -1,9 +1,9 @@
-# Setting Up Docusaurs
-The process of learing of Docusaurus and the base setup of Wondering Admin. 
+# Setting Up Docusaurus
+The process of learning Docusaurus and the base setup of Wondering Admin. 
 
 <!--intro-->
 
-The Docusaurus [getting status](https://docusaurus.io/docs/installation) documentation is a great tool to follow and use. To be able to run and test the site locally you need node.js V18+. To install node.js you can use the isntaller found at [node.js](https://nodejs.org/en/download/package-manager), I used [chocolatey](https://chocolatey.org/install) to installed it. I would also recommend using [Visual Studio Code (vscode)](https://code.visualstudio.com/)
+The Docusaurus [getting status](https://docusaurus.io/docs/installation)documentation is a great tool to follow and use. To be able to run and test the site locally you need node.js V18+. To install node.js you can use the installer found at [node.js](https://nodejs.org/en/download/package-manager), I used [chocolatey](https://chocolatey.org/install) to install it. I would also recommend using [Visual Studio Code (vscode)](https://code.visualstudio.com/)
 
 ## Chocolatey & Node.js
 [Chocolatey](https://chocolatey.org/) is a great tool to install program via the command lind. Windows has created their own version of it, while its works pretty good and is great for some programs I have found Chocolatey works better for devlopment tools.
@@ -14,14 +14,14 @@ The other option is to use winget to install chocolatey
 ```
 winget install Chocolatey.Chocolatey
 ```
-That will install Chocolatey, once it is install you can use chocolatey to install node.js with the following command. 
+That will install Chocolatey, once it is installed you can use chocolatey to install node.js with the following command. 
 ```
 choco install node.js
 ```
 
 ## Docusaurus Setup
 
-Now that Node.js is install we can get Docusaurus installed and running locally. 
+Now that Node.js is installed we can get Docusaurus installed and running locally. 
 
 - ### Docusaurus install
 
@@ -40,7 +40,7 @@ Now that Node.js is install we can get Docusaurus installed and running locally.
   I know a little JavaScript and even less with TypeScript, I selected JavaScript. It will take a minute or so and download the required files. 
   ![Downloading files](./img/create-docusaurus-out1.png)
 
-  All the basic files are now available inside the folder called `my-website` or whatever you named it.  We can view the site now with all its defaults. To do you will want to run the follow commands inside your site root folder:
+  All the basic files are now available inside the folder called `my-website` or whatever you named it. We can view the site now with all its defaults. To do this you will want to run the follow commands inside your site root folder:
   ``` bash
   #change my-website to what you called the folder
   cd ./my-website
@@ -58,7 +58,7 @@ Now that Node.js is install we can get Docusaurus installed and running locally.
 
 - ### Configuring Docusaurus
 
-  In `docusaurus.config.js` you will want to change some variables. You will want to fine this section to change the variables. The comments are helpful, the whole documentation is really good. This section is line 13-26 in `docusaurus.config.js`. 
+  In `docusaurus.config.js` you will want to change some variables. You will want to fine??? this section to change the variables. The comments are helpful, the whole documentation is really good. This section is line 13-26 in `docusaurus.config.js`. 
   ```js
     title: 'My Site',
     tagline: 'Dinosaurs are cool',
@@ -82,7 +82,7 @@ Now that Node.js is install we can get Docusaurus installed and running locally.
     tagline: 'Dinosaurs are cool', //Can be anything you would like. 
   ```
 
-  If you are hosting this on Github pages without a custom domain you will want to add `trailingSlash: false,` on the line after Project name it should look like: 
+  If you are hosting this on Github pages without a custom domain you will want to add `trailingSlash: false,` on the line after Project name. It should look like: 
   ```js
     organizationName: 'facebook', // Usually your GitHub org/user name.
     projectName: 'docusaurus', // Usually your repo name.
@@ -94,7 +94,7 @@ Now that Node.js is install we can get Docusaurus installed and running locally.
   - ### homepage
     If you are familiar with JS and React these next steps will be straight forward. 
 
-    The homepage is built with two `.js` files. The one that build the homepage is: `/pages/index.js`. In this file has a function call that build middle section, that function is defined `/src/components/HomepageFeatures/index.js`
+    The homepage is built with two `.js` files. The one that builds the homepage is: `/pages/index.js`. In this file there is a function call that builds the middle section, that function is defined `/src/components/HomepageFeatures/index.js`
 
     If you are keeping the same layout style provided by default, there is not much you need to change in `/pages/index.js`. The one thing I would point out to change is the tab title. 
 
@@ -143,19 +143,19 @@ Now that Node.js is install we can get Docusaurus installed and running locally.
 - ## Github
   Once you have your site looking the way you want locally, we can upload and do the first commit to github or any other Git platform. These steps will mainly focus on Github but should transfer to other Git platforms. If you have not done anything with Git local you will need to instal [Git](https://git-scm.com/). We will be using the [Github extension for vscode](https://code.visualstudio.com/docs/sourcecontrol/Github) also. 
 
-  In your website folder you will want to ininitialize it. you can do this by running the command:
+  In your website folder, you will want to initialize it. You can do this by running the command:
   ``` bash 
   git init
   ```
-  or by opening the folder in vscode, selecting the github extension and Initialize Reposoitory
+  or by opening the folder in vscode, selecting the github extension and Initialize Repository
 
   ![initializeRepo](./img/Code_qT03RB2FVe.png)
 
   Now that it is initialized you can publish your branch with vscode. If you plan to use Github pages it will need to be a public repo, Cloudflare pages can use a private repo. 
 
-  If you are using Github pages you will need to create the Github Actions to deploy your website. To get started you will want to create an hidden folder `.github` and then a `workflows` folder inside that. This is where you will defined the actions with yml files. Docusaurus provides some basic action files in their document. I would recommend copying those file from [here](https://docusaurus.io/docs/deployment#triggering-deployment-with-github-actions)
+  If you are using Github pages you will need to create the Github Actions to deploy your website. To get started you will want to create an hidden folder `.github` and then a `workflows` folder inside that. This is where you will define the actions with yml files. Docusaurus provides some basic action files in their document. I would recommend copying those file from [here](https://docusaurus.io/docs/deployment#triggering-deployment-with-github-actions)
 
-  With those action created everytime you sync up and publish to main branch it will build the site and publish to Github pages!
+  With those actions created everytime you sync up and publish to main branch it will build the site and publish to Github pages!
 
 # Wrapping up
 You should now have a Docusaurus website deployed on Github Pages. This is a great setup to host a techincal blog & documents. You can keep this simple setup or expand on it if you know more Javascript and React. I have setup a local search plugin on mine already but Docusaurus has a ton of [offical](https://docusaurus.io/docs/api/plugins0) and [community](https://docusaurus.io/community/resources#community-plugins) plugins. 
