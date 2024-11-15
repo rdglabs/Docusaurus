@@ -107,8 +107,41 @@ The tab title will change depending on the page. By default it will show these:
 |Blog | Blog \| My Site 
 | Docs | Doc \| My Site
 
-If you want to change this for the homepage in `/pages/index.js`
+If you want to change this for the homepage, you can find the below in `/pages/index.js`
 ```js
 title={`Hello from ${siteConfig.title}`}
 ```
+change it to whatever you would like. 
 
+
+The second file, `/src/components/HomepageFeatures/index.js`, has more of the actual information that is used and displayed. 
+
+In the file you will find blocks:
+```js
+{
+    title: 'Easy to Use',
+    Svg: require('@site/static/img/Automate.svg').default,
+    description: (
+      <>
+        Docusaurus was designed form the ground up to be easily installed and used to get your website up and running quickly. 
+      </>
+    ),
+  },
+  ```
+  There is 3 block by default and they equally spaced, and centered on the page. Change the title, svg, and descriptions to change them. 
+
+### Color theme
+The only thing left is changing the color scheme. This will affect the whole website color scheme. The file `/src/css/custom.css` holds all the color hex values for dark and light mode. Adjust them as you want. 
+
+By default it will select light mode for new user, personally the first thing I do it change everything to dark mode. Because of these I added this code to set the default theme to dark mode. 
+```js
+//add to docusaurus.config.js after the prism block
+colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+      },
+```
+
+
+## Github
+Once you have your site looking the way you want locally, we can upload and do the first commit to github or any other git platform. These steps will mainly focus on github but should transfer to other git plateforms. 
