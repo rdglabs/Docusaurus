@@ -17,7 +17,6 @@
     "@docusaurus/core": "3.6.1",
     "@docusaurus/preset-classic": "3.6.1",
     "@easyops-cn/docusaurus-search-local": "^0.45.0",
-    "@cmfcmf/docusaurus-search-local",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",

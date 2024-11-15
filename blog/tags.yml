@@ -1,7 +1,7 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+github:
+  label: github
+  permalink: /github
+  description: Items related with Github
 
 hello:
   label: Hello
