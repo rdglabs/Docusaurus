@@ -70,13 +70,13 @@ const config = {
       }),
     ],
   ],
-  plugins: [
+   plugins: [
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
-      ({
-        hashed: true,
-      }),
-    ]
+      {
+        // Options here
+      },
+    ],
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
