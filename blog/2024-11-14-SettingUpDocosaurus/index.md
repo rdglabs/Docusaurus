@@ -1,3 +1,9 @@
+---
+slug: settingupdocusaurus
+title: Setting_up_Docusaurus
+authors: [gillespr]
+tags: [github, docusaurus]
+---
 # Setting Up Docusaurus
 The process of learning Docusaurus and the base setup of Wondering Admin. 
 

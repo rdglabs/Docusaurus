@@ -2,7 +2,7 @@
 slug: greetings
 title: Greetings
 authors: [gillespr]
-tags: [Hello, docusaurus]
+tags: [hello, docusaurus]
 ---
 
 # Greetings
