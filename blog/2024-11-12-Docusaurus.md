@@ -1,6 +1,6 @@
 ---
 slug: settling-on-docusaurus
-title: Setting on Docusaurus
+title: Settling on Docusaurus
 authors: [gillespr]
 tags: [github, docusaurus]
 ---
