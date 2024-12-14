@@ -8,22 +8,22 @@ tags: [powershell,importexcel,AD]
 # Powershell ImportExcel
 If you have worked with data in powershell you have most likely used the command `export-csv`. This is a great built in command to get the data out of the console and in a file to work with or share. I use `export-csv` a lot on AD queries, building computer reports or just need to view and sort some data quickly. 
 <!-- truncate -->
-I started using `export-csv` in a lot of my script that where setup with a task scheduler and then send those csv file out as reports. Most of the time these reports would be just for myself. After having one of my report containing M365 license count by site and region was being used by everyone, I had a coworker made a joke about making the report "fancier" since it had made its way up to managers level. I knew about the module `importexcel` but never bothered try working with it. It is a game changer to creating reports. You can create tables, graphs and do a lot by calling teh excel object functions. 
+I started using `export-csv` in a lot of my script that had been setup with a task scheduler and then send those csv file out as reports. Most of the time these reports would be just for myself. After having one of my report containing M365 license count by site and region start being used by everyone, I had a coworker that made a joke about making the report "fancier" since it had made its way up to managers level. I knew about the module `importexcel` but never bothered to try working with it. It is a game changer to creating reports. You can create tables, graphs and do a lot by calling the excel object functions. 
 
 ## Getting Started
 First thing to do with any powershell module is to install [importexcel](https://github.com/dfinke/ImportExcel)
 ```powershell
 Install-Module -Name ImportExcel
 ```
-if you are going to use this module on an automated script it would be best to install system wide
+If you are going to use this module on an automated script it would be best to install system wide
 ```powershell
 Install-Module -Name ImportExcel -Scope AllUsers
 ```
-A good thing to do with any new module it to see what commands it has that you can use.
+A good thing to do with any new module is to see what commands it has that you can use.
 ```powershell
 get-command -module ImportExcel
 ```
-This can will return a list of all `ImportExcel` commands
+This will return a list of all `ImportExcel` commands
 <div class="scrollable-code">
 ```powershell showLineNumbers
 CommandType     Name                                               Version    Source
@@ -107,7 +107,7 @@ Function        Update-FirstObjectProperties                       7.8.10     im
 ```
 </div><br/><br/>
 
-We wont be going though all these command on this article. The first one we will talk about is `export-excel`
+We will not be going though all these command on this article. The first one we will talk about is `export-excel`
 
 ## Import-Excel
 
@@ -130,7 +130,7 @@ North  North Dakota 789   640.72
 South  Delaware     712   508.55
 ```
 ## Export-Excel
-let say you are trying to build a report of users from AD grouped by department, and region. 
+let say you are trying to build a report of users from AD grouped by department and region. 
 
 Giving this AD sample data:
 
@@ -199,7 +199,7 @@ You can see there is a sheet name Location and Department with the respective ta
 
 ### Same Sheet
 
-For a simple data table like these they can listed on the same sheets without any issues. By default export-excel will start putting the data in cell`A1`. It you try to export multiple variables to a excel workbook it will just over write the existing data. To get around this you select the start row and column. 
+For a simple data table like these they can be listed on the same sheets without any issues. By default export-excel will start putting the data in cell`A1`. It you try to export multiple variables to a excel workbook it will just over write the existing data. To get around this you select the start row and column. 
 
 ```powershell
 $location | export-excel -Path c:\temp\report.xlsx -WorksheetName "Location"  -StartRow 1 -StartColumn 1
@@ -211,13 +211,13 @@ Adding the options `-StartRow` and `-StartColumn` will let you set the start cel
 
 ![samesheet](./img//excelSameSheet.png)
 ### Making it Fancier
-One of the benefits of using ImportExcel is the ability to make tables look fancier. Right now this look the same as just export-csv expect it is on different sheets. Let make it look a little nicer. 
+One of the benefits of using ImportExcel is the ability to make tables look fancier. Right now this looks the same as just export-csv expect it is on different sheets. Let make it look a little nicer. 
 ```powershell title="Formatting the tables"
 $location | export-excel -Path c:\temp\report.xlsx -WorksheetName "Location" -TableName "Locations" -TableStyle light9 -Title "Location Counts" -TitleBold -TitleSize 14 -AutoSize
 
 $Department | export-excel -Path c:\temp\report.xlsx -WorksheetName "Department" -TableName "Department" -TableStyle light9 -Title "Department Counts" -TitleBold -TitleSize 14 -AutoSize
 ```
-Now when we look at the excel table it is has a header with "Locations Counts"/"Department Counts" and you can select the table from the name box. It will also have the table sytle light9 from excel. 
+Now when we look at the excel table it is has a header with "Locations Counts"/"Department Counts" and you can select the table from the name box. It will also have the table style "light9" from excel. 
 
 ![DepartmentFancyTable](./img/departmentFancyTable.png)![LocationFancyTable](./img/locationFancyTable.png)
 
@@ -232,4 +232,4 @@ Each option:
 
 
 ## Wrapping up
-These two commands, `import-excel` and `export-excel` will be a good start with `importexcel` module. There are a lot of other commands that let you do additional function. Add pivot tables, graphs, conditional formatting, in future posts we can review the use of those. 
+These two commands, `import-excel` and `export-excel` will be a good start with `importexcel` module. There are a lot of other commands that let you do additional functions. Add pivot tables, graphs, conditional formatting, in future posts we can review the use of those. 
