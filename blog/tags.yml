@@ -22,3 +22,14 @@ powershell:
   label: Powershell
   permalink: /powershell
   description: Powershell scripting items
+
+
+AD:
+  label: AD
+  permalink: /AD
+  description: Active Directory
+
+importexcel:
+  label: ImportExcel
+  permalink: /importexcel
+  description: Powershell module ImportExcel
